@@ -152,19 +152,73 @@ section.
 
 ## Creating a baseline for Storybook components
 
-TBD
+The first step in visual component testing is creating a set of *baseline* screenshots for each component.
+The baseline images represent the "good" or "proper" visual state for the components.
+When visual component tests run in the future,
+they will compare the baselines to new screenshots to detect any changes.
+
+Capture baselines by running the visual tests with this command:
+
+```
+npx eyes-storybook
+```
+
+In the console output, you should see the tests discover all Storybook stories
+and capture "New" results for each.
+When you log into the [Applitools dashboard](https://eyes.applitools.com/),
+You should see a new test batch with screenshots for all components.
+The status of each test should say "New" here, too.
 
 
 ## Running the first round of visual tests
 
-TBD
+Once baselines are captured, you can run comparison tests for each component.
+Rerun the visual tests again without making any changes.
+Use the same command to launch tests:
+
+```
+npx eyes-storybook
+```
+
+Now, the console output and the new batch in the dashboard should say "Passed" instead of "New" for each story.
+Each test result in the dashboard can also be manually inspected next to the baseline.
 
 
 ## Detecting visual changes in subsequent tests
 
-TBD
+Let's make a change to one of the components.
+In `src/stories/button.css`, change this:
+
+```css
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+```
+
+To this:
+
+```css
+.storybook-button--primary {
+  color: white;
+  background-color: #f80606;
+}
+```
+
+Save the file, and rerun the visual tests.
+This time, Applitools Eyes detects that a few components are different!
+These tests are marked as "Unresolved" because someone needs to decide if they are okay or not okay.
+You can log into the dashboard to see the changes firsthand: blue buttons became red.
+You can then decide if they are okay ("thumbs-up") or not okay ("thumbs-down").
+
+Here are some other things to try:
+
+* Mark the change as okay, and run the tests again with the new baseline.
+* Make changes to other components, like changing text or size.
+* Change the preview match level when comparing images.
 
 
 ## Learning more
 
-TBD
+This demo only scratches the surface of what Applitools enables with visual testing.
+Check out the [Applitools website](https://applitools.com/) to learn more.
