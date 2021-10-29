@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Visually Testing Storybook Components in React with Applitools Eyes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a demo project for visually testing
+[Storybook](https://storybook.js.org/) components
+in a [React](https://reactjs.org/) front-end app
+with [Applitools Eyes](https://applitools.com/products-eyes/).
 
-## Available Scripts
+What does all that mean?
 
-In the project directory, you can run:
+* [React](https://reactjs.org/) is a JavaScript library for building websites.
+* [Storybook](https://storybook.js.org/) is a tool for creating components to build UIs for websites.
+* [Visual testing](https://applitools.com/visual-testing/) detects visual changes in UIs,
+  like improper formatting or missing elements.
+* [Applitools Eyes](https://applitools.com/products-eyes/) automates visual testing to help folks
+  quickly identify real problems while skipping acceptable changes.
 
-### `npm start`
+The best part is that Applitools Eyes will perform visual testing on Storybook components
+*without* needing to write any extra test code yourself!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This README walks through the demo.
+Please clone the project and follow along!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Why test components visually?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+TBD
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setting up this project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+TBD
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Running the React app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+TBD
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Running the Storybook editor
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+TBD
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setting up Applitools testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+TBD
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Creating a baseline for Storybook components
 
-### Analyzing the Bundle Size
+TBD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Running the first round of visual tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+TBD
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Detecting visual changes in subsequent tests
 
-### Deployment
+TBD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Learning more
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TBD
