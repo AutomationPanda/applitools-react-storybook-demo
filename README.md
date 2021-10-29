@@ -97,7 +97,57 @@ and the main part of the page should be a component editor.
 
 ## Setting up Applitools testing
 
-TBD
+There are a few setup steps required for visual testing with Applitools.
+
+
+### Applitools account
+
+First, you need to create an Applitools account.
+You can sign up for free [here](https://auth.applitools.com/users/register).
+Once you have an account, you can log into your
+[Applitools testing dashboard](https://eyes.applitools.com/).
+
+
+### Applitools npm package for Storybook
+
+Second, you need to install the
+[eyes-storybook](https://www.npmjs.com/package/@applitools/eyes-storybook) package.
+This package should have been installed when you ran `npm install` earlier.
+However, if you want to install it in other projects, use the following command:
+
+```
+npm install --save-dev @applitools/eyes-storybook
+```
+
+
+### Applitools API key
+
+Third, you need to set your Applitools API key in your environment.
+Applitools should have sent you an email with your API key when you created your account.
+You can also access your API key through the Applitools dashboard.
+
+On Windows:
+
+```
+set APPLITOOLS_API_KEY=<your-api-key>
+```
+
+On Linux or macOS (using bash):
+
+```
+export APPLITOOLS_API_KEY=<your-api-key>
+```
+
+
+### Applitools configuration
+
+Fourth, you should configure Applitools configurations in the `applitools.config.js` file.
+For example, you might want to set `batchName` to a descriptive name for your test suite,
+since this name will appear in the Applitools dashboard.
+The [npm package page](https://www.npmjs.com/package/@applitools/eyes-storybook)
+provides documentation on `applitools.config.js` settings under the
+[Advanced configuration](https://www.npmjs.com/package/@applitools/eyes-storybook#advanced-configuration)
+section.
 
 
 ## Creating a baseline for Storybook components
