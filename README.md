@@ -210,12 +210,32 @@ This time, Applitools Eyes detects that a few components are different!
 These tests are marked as "Unresolved" because someone needs to decide if they are okay or not okay.
 You can log into the dashboard to see the changes firsthand: blue buttons became red.
 You can then decide if they are okay ("thumbs-up") or not okay ("thumbs-down").
+You can also change the preview match level when comparing images.
 
-Here are some other things to try:
+Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.
+Then, undo the button change in `src/stories/button.css` and rerun the tests.
+They should pass again.
 
-* Mark the change as okay, and run the tests again with the new baseline.
-* Make changes to other components, like changing text or size.
-* Change the preview match level when comparing images.
+
+## Testing multiple browsers
+
+Visual tests can run against multiple browser types.
+Add the following setting to `applitools.config.js` to test both Chrome and Firefox:
+
+```javascript
+module.exports = {
+  // ...
+  browser: [
+    { width: 1024, height: 768, name: "chrome" },
+    { width: 1024, height: 768, name: "firefox" }
+  ]
+}
+```
+
+Rerun the tests.
+There should be "New" results for the new browser types!
+Applitools Eyes treats each browser as a unique test with a unique result
+because visuals may be different between browser types.
 
 
 ## Learning more
