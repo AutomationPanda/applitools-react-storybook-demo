@@ -7,6 +7,9 @@
   display: inline-block;
   line-height: 1;
 }
+.storybook-button--rectangular {
+  border-radius: 0;
+}
 .storybook-button--primary {
   color: white;
   background-color: #1ea7fd;
@@ -27,4 +30,8 @@
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+.storybook-button--enormous {
+  font-size: 96px;
+  padding: 24px 48px;
 }

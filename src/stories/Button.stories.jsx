@@ -27,14 +27,26 @@ Secondary.args = {
   label: 'Button',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const Rectangular = Template.bind({});
+Rectangular.args = {
+  rectangular: true,
   label: 'Button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
+  label: 'Button',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+  label: 'Button',
+};
+
+export const Enormous = Template.bind({});
+Enormous.args = {
+  size: 'enormous',
   label: 'Button',
 };

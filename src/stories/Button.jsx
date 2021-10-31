@@ -5,12 +5,13 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, rectangular, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  var rect = rectangular ? 'storybook-button--rectangular' : '';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, rect].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -25,13 +26,17 @@ Button.propTypes = {
    */
   primary: PropTypes.bool,
   /**
+   * Should this button have rectangular edges?
+   */
+  rectangular: PropTypes.bool,
+  /**
    * What background color to use
    */
   backgroundColor: PropTypes.string,
   /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'enormous']),
   /**
    * Button contents
    */
@@ -48,3 +53,5 @@ Button.defaultProps = {
   size: 'medium',
   onClick: undefined,
 };
+
+export default Button;
