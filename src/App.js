@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from './stories/Button.jsx'
+import TextInput from './stories/TextInput.jsx'
 
 function App() {
   return (
@@ -29,8 +30,14 @@ function App() {
 
       <header className="App-header">
         <p>Web apps are full of small, reusable pieces called <b>components</b>.</p>
-        <p>Here's a component named <code>Button</code>:</p>
-        <p><Button label="Click me!" primary="true" size="large"></Button></p>
+
+        <div class="component-container">
+          <div><p>Here's a component named <code>Button</code>:</p></div>
+          <div><p><Button label="Click me!" primary="true" size="large"></Button></p></div>
+          <div><p>Here's one named <code>TextInput</code>:</p></div>
+          <div><p><TextInput/></p></div>
+        </div>
+
         <p>
           Components enable developers to create uniform UIs without duplicating code.
         </p>
@@ -59,7 +66,7 @@ function App() {
       <header className="App-header">
         <p>What if our button become enormous, like this?</p>
         <p><Button label="Click me!" primary="true" size="enormous"></Button></p>
-        <p>This could break the user experience on multiple pages.</p>
+        <p>Clearly, this could ruin the user experience on multiple pages.</p>
       </header>
       
       <header className="App-header">

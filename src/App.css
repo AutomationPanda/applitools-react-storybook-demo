@@ -44,6 +44,14 @@ p {
   margin-bottom: 0.6em;
 }
 
+.component-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .comparison-container {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
