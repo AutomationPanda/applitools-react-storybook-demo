@@ -212,11 +212,61 @@ This time, Applitools Eyes detects that a few components are different!
 These tests are marked as "Unresolved" because someone needs to decide if they are okay or not okay.
 You can log into the dashboard to see the changes firsthand: blue buttons became red.
 You can then decide if they are okay ("thumbs-up") or not okay ("thumbs-down").
-You can also change the preview match level when comparing images.
 
+While comparing images, go to "View" and select "Preview match level".
+The default setting is "Strict", which aims to detect changes as a human eye would see.
+Under this setting, the whole button should be highlighted.
+However, if you change it to "Content", then the highlighting disappears.
+"Content" is like "Strict" but ignores color and small stylistic difference.
+If you change it to "Layout", the highlighting also disappears,
+because "Layout" looks for changes in element positions relative to each other.
+You can use different match levels to help determine if changes are okay.
+
+Let's say this change is not okay.
 Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.
+Save the changes in the dashboard.
 Then, undo the button change in `src/stories/button.css` and rerun the tests.
 They should pass again.
+
+
+## Detecting visual changes in more complex components
+
+Some components are more complex than others.
+Changes in content might be okay, while changes in layout might be problematic.
+Let's make a change to the `Header` component.
+In `src/stories/Header.jsx`, change this:
+
+```javascript
+<h1>Acme</h1>
+```
+
+To this:
+
+```javascript
+<h1>Macme</h1>
+```
+
+Also, in `src/stories/header.css`, remove this line:
+
+```css
+justify-content: space-between;
+```
+
+Save the file, and rerun the visual tests.
+Again, Applitools Eyes detects differences and marks them "Unresolved".
+
+In the Applitools dashboard, open the results for one of the `Header` stories.
+Compare the latest image to the baseline.
+Applitools should highlight the titles and buttons ans different.
+Change the match level from "Strict" to "Content" and "Layout" again.
+This time, "Content" still highlights almost as much difference as "Strict"
+because the header changed a lot.
+"Layout", however, only highlights buttons because it ignores the word change of "Acme" to "Macme".
+
+Again, let's say these change is not okay.
+Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.
+Save the changes in the dashboard.
+Then, undo the code changes, rerun the tests, and make sure things pass.
 
 
 ## Testing multiple browsers
