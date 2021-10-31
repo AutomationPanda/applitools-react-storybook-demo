@@ -88,13 +88,9 @@ function App() {
 
       <header className="App-header">
         <p>Let's see how to visually test Storybook components with Applitools!</p>
-
-
         <div className="applitools-img-container">
           <img src="applitools-dashboard.png" className="applitools-img"/>
         </div>
-
-
         <p>
           Instructions are in the <a
             className="App-link"
