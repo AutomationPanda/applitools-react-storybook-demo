@@ -18,6 +18,7 @@ The best part is that Applitools Eyes will perform visual testing on Storybook c
 *without* needing to write any extra test code yourself!
 
 This README walks through the demo.
+The React app's home page also explains visual testing.
 Please clone the project and follow along!
 
 
@@ -79,20 +80,21 @@ npm start
 ```
 
 This command starts the app at `http://localhost:3000/`.
-When it loads, you should see the home page.
+When it loads, you should see the home page,
+which concisely explains the need for visual component testing.
 
 
-## Running the Storybook editor
+## Running the Storybook viewer
 
-To launch the Storybook editor, run:
+To launch the Storybook viewer, run:
 
 ```
 npm run storybook
 ```
 
-This command starts the editor at `http://localhost:6006/`.
+This command starts the viewer at `http://localhost:6006/`.
 When it loads, you should see components on the left navbar,
-and the main part of the page should be a component editor.
+and the main part of the page should be a component viewer.
 
 
 ## Setting up Applitools testing
