@@ -90,9 +90,7 @@ function App() {
           Applitools Eyes
           </a> does this automatically for Storybook components.
         </p>
-        <p>
-          It captures screenshots for each story and uses Visual AI for comparisons.
-        </p>
+        <p>It captures screenshots for each story and uses <b>Visual AI</b> for comparisons.</p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide6" /></p>
       </header>
 
