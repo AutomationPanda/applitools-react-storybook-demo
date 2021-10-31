@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .App-link {
@@ -35,4 +37,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-gap: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.applitools-img-container {
+  height: 60vh;
+  width: 75vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.applitools-img {
+  max-height: 100%;
+  max-width: 100%;
 }
