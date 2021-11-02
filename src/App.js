@@ -43,7 +43,7 @@ function App() {
         <p>Web apps are full of small, reusable pieces called <b>components</b>.</p>
         <div class="component-container">
           <div>Here's a component named <code>Button</code>:</div>
-          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div><Button label="Click me!" size="large"></Button></div>
           <div>Here's one named <code>TextInput</code>:</div>
           <div><TextInput/></div>
           <div>The <code>ScrollButton</code> is a component, too:</div>
@@ -58,11 +58,11 @@ function App() {
 
         <div class="component-container">
           <div>What if our button...</div>
-          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div><Button label="Click me!" size="large"></Button></div>
           <div>...becomes rectangular?</div>
-          <div><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></div>
+          <div><Button label="Click me!" rectangular="true" size="large"></Button></div>
           <div>...or changes color?</div>
-          <div><Button label="Click me!" primary="true" size="large" backgroundColor="red"></Button></div>
+          <div><Button label="Click me!" size="large" backgroundColor="red"></Button></div>
         </div>
 
         <p>Is that acceptable? Is that bad? Will anyone notice?</p>
@@ -71,7 +71,7 @@ function App() {
 
       <header className="App-header" id="slide4">
         <p>What if our button become enormous, like this?</p>
-        <p><Button label="Click me!" primary="true" size="enormous"></Button></p>
+        <p><Button label="Click me!" size="enormous"></Button></p>
         <p>Clearly, this could ruin the user experience on multiple pages.</p>
         <p>Not all changes might be this obvious.</p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide5" /></p>
@@ -80,9 +80,9 @@ function App() {
       <header className="App-header" id="slide5">
         <p>We need a way to visually check for component changes:</p>
         <div class="comparison-container">
-          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div><Button label="Click me!" size="large"></Button></div>
           <div>&lt;=&gt;</div>
-          <div><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></div>
+          <div><Button label="Click me!" rectangular="true" size="large"></Button></div>
           <div>The "baseline"</div>
           <div></div>
           <div>The "latest"</div>
