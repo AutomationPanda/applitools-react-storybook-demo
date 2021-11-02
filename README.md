@@ -222,11 +222,11 @@ If you change it to "Layout", the highlighting also disappears,
 because "Layout" looks for changes in element positions relative to each other.
 You can use different match levels to help determine if changes are okay.
 
-Let's say this change is not okay.
-Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.
+Let's say this change is okay.
+Mark the "Unresolved" tests as "Passed" by clicking the thumbs-up icon.
 Save the changes in the dashboard.
-Then, undo the button change in `src/stories/button.css` and rerun the tests.
-They should pass again.
+This will save new baselines.
+Rerun the tests, and they should pass again.
 
 
 ## Detecting visual changes in more complex components
@@ -263,7 +263,7 @@ This time, "Content" still highlights almost as much difference as "Strict"
 because the header changed a lot.
 "Layout", however, only highlights buttons because it ignores the word change of "Acme" to "Macme".
 
-Again, let's say these change is not okay.
+Let's say these changes are *not* okay.
 Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.
 Save the changes in the dashboard.
 Then, undo the code changes, rerun the tests, and make sure things pass.
