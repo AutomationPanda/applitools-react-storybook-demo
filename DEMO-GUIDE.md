@@ -74,7 +74,7 @@ This is a guide for demo steps.
    * Preview different match levels
    * Thumbs-up the changes and rerun the tests
 4. Make another visual change
-   * Change the "Panda" header in `src/stories/Header.jsx`
+   * Change the header title in `src/stories/Header.jsx`
    * Remove `justify-content: space-between;` from `src/stories/header.css`
    * Rerun
    * Show failures in the Applitools dashboard
