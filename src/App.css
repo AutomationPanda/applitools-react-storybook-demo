@@ -59,7 +59,7 @@ p {
 .comparison-container {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }

@@ -11,7 +11,21 @@ function App() {
       <header className="App-header" id="slide1">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Let's learn how to visually test components using Applitools Eyes!</p>
-        <p>We will use this React app with Storyboard components.</p>
+        <p>We will use this <a
+            className="App-link"
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          React
+          </a> app with <a
+            className="App-link"
+            href="https://storybook.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Storybook
+          </a> components.</p>
         <p>
           <a
             className="App-link"
@@ -19,7 +33,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo Project Repository
+            [Demo Project Repository]
           </a>
         </p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide2"/></p>
@@ -27,39 +41,30 @@ function App() {
 
       <header className="App-header" id="slide2">
         <p>Web apps are full of small, reusable pieces called <b>components</b>.</p>
-
         <div class="component-container">
-          <div><p>Here's a component named <code>Button</code>:</p></div>
-          <div><p><Button label="Click me!" primary="true" size="large"></Button></p></div>
-          <div><p>Here's one named <code>TextInput</code>:</p></div>
-          <div><p><TextInput/></p></div>
-          <div><p>The <code>ScrollButton</code> is a component, too:</p></div>
-          <div><p><ScrollButton/></p></div>
+          <div>Here's a component named <code>Button</code>:</div>
+          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div>Here's one named <code>TextInput</code>:</div>
+          <div><TextInput/></div>
+          <div>The <code>ScrollButton</code> is a component, too:</div>
+          <div><ScrollButton/></div>
         </div>
-
-        <p>
-          Components enable developers to create uniform UIs without duplicating code.
-        </p>
-        <p>
-          This React app uses <a
-            className="App-link"
-            href="https://storybook.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          Storybook
-          </a> to build its components.
-        </p>
+        <p>Components enable developers to create uniform UIs without duplicating code.</p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide3" /></p>
       </header>
 
       <header className="App-header" id="slide3">
-        <p>What happens if a component changes? What if our button...</p>
-        <p><Button label="Click me!" primary="true" size="large"></Button></p>
-        <p>... becomes rectangular?</p>
-        <p><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></p>
-        <p>... or changes color?</p>
-        <p><Button label="Click me!" primary="true" size="large" backgroundColor="red"></Button></p>
+        <p>What happens if a component changes?</p>
+
+        <div class="component-container">
+          <div>What if our button...</div>
+          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div>...becomes rectangular?</div>
+          <div><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></div>
+          <div>...or changes color?</div>
+          <div><Button label="Click me!" primary="true" size="large" backgroundColor="red"></Button></div>
+        </div>
+
         <p>Is that acceptable? Is that bad? Will anyone notice?</p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide4" /></p>
       </header>
@@ -74,9 +79,9 @@ function App() {
       <header className="App-header" id="slide5">
         <p>We need a way to visually check for component changes:</p>
         <div class="comparison-container">
-          <div><p><Button label="Click me!" primary="true" size="large"></Button></p></div>
-          <div><p>&lt;=&gt;</p></div>
-          <div><p><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></p></div>
+          <div><Button label="Click me!" primary="true" size="large"></Button></div>
+          <div>&lt;=&gt;</div>
+          <div><Button label="Click me!" primary="true" rectangular="true" size="large"></Button></div>
           <div>The "baseline"</div>
           <div></div>
           <div>The "latest"</div>
