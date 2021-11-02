@@ -3,7 +3,7 @@ import React from 'react';
 import { ScrollButton } from './ScrollButton';
 
 export default {
-  title: 'Example/ScrollButton',
+  title: 'Applitools Demo/ScrollButton',
   component: ScrollButton,
 };
 

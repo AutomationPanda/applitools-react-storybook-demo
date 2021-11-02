@@ -28,14 +28,11 @@ This is a guide for demo steps.
 ### II. Storybook viewer: Our components
 
 1. Let's look at Storybook components to visually test
-2. Show custom components
+2. Show components
    * Buttons
+   * Header
    * ScrollButton
    * TextInput
-3. Show composite components
-   * (These are out-of-the-box from Storybook)
-   * Header
-   * Page
 
 
 ### III. Applitools setup
@@ -77,7 +74,7 @@ This is a guide for demo steps.
    * Preview different match levels
    * Thumbs-up the changes and rerun the tests
 4. Make another visual change
-   * Change the "Acme" header in `src/stories/Header.jsx`
+   * Change the "Panda" header in `src/stories/Header.jsx`
    * Remove `justify-content: space-between;` from `src/stories/header.css`
    * Rerun
    * Show failures in the Applitools dashboard

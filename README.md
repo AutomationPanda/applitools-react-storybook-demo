@@ -237,13 +237,13 @@ Let's make a change to the `Header` component.
 In `src/stories/Header.jsx`, change this:
 
 ```javascript
-<h1>Acme</h1>
+<h1>Panda</h1>
 ```
 
 To this:
 
 ```javascript
-<h1>Macme</h1>
+<h1>Tiger</h1>
 ```
 
 Also, in `src/stories/header.css`, remove this line:
@@ -261,7 +261,7 @@ Applitools should highlight the titles and buttons ans different.
 Change the match level from "Strict" to "Content" and "Layout" again.
 This time, "Content" still highlights almost as much difference as "Strict"
 because the header changed a lot.
-"Layout", however, only highlights buttons because it ignores the word change of "Acme" to "Macme".
+"Layout", however, only highlights buttons because it ignores the word change of "Panda" to "Tiger".
 
 Let's say these changes are *not* okay.
 Mark the "Unresolved" tests as "Failed" by clicking the thumbs-down icon.

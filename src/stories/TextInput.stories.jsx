@@ -3,7 +3,7 @@ import React from 'react';
 import { TextInput } from './TextInput';
 
 export default {
-  title: 'Example/TextInput',
+  title: 'Applitools Demo/TextInput',
   component: TextInput,
 };
 
