@@ -73,6 +73,7 @@ function App() {
         <p>What if our button become enormous, like this?</p>
         <p><Button label="Click me!" primary="true" size="enormous"></Button></p>
         <p>Clearly, this could ruin the user experience on multiple pages.</p>
+        <p>Not all changes might be this obvious.</p>
         <p className="scroll-arrow-margin"><ScrollButton scrollToId="slide5" /></p>
       </header>
       
