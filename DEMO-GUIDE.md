@@ -7,12 +7,13 @@ This is a guide for demo steps.
 
 1. Open project in Visual Studio Code
 2. Delete extra test runs from Applitools dashboard
-3. Run React app
-   * Run `npm start`
-   * Load main page at http://localhost:3000/
-4. Run Storybook viewer
-   * Run `npm run storybook`
-   * Load main page at http://localhost:6006/
+3. Run React app (`npm start`)
+4. Run Storybook viewer (`npm run storybook`)
+5. Load web pages
+   1. React app: http://localhost:3000/
+   2. Storybook viewer: http://localhost:6006/
+   3. Applitools sign-up: https://auth.applitools.com/users/register
+   4. Applitools dashboard: https://eyes.applitools.com/
 
 
 ### I. React app: Why visually test components?
